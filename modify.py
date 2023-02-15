@@ -1,7 +1,8 @@
 CHANGE_MAPPING = True
 MAPPING_REPO = "        maven { url = 'https://maven.parchmentmc.org' }\n"
 MAPPING_PLUGIN = "    id 'org.parchmentmc.librarian.forgegradle' version '1.+'\n"
-MAPPING_CHANNEL = "    mappings channel: 'parchment', version: '2022.11.27-1.19.2'\n"
+# GET VERSION HERE: https://parchmentmc.org/docs/getting-started
+MAPPING_CHANNEL = "    mappings channel: 'parchment', version: '2023.02.05-1.19.3'\n"
 
 ADD_MIXIN = True
 MIXIN_REPO = "        maven { url = 'https://repo.spongepowered.org/maven' }\n"
