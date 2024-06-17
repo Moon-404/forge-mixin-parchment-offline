@@ -2,19 +2,19 @@ CHANGE_MAPPING = True
 MAPPING_REPO = "        maven { url = 'https://maven.parchmentmc.org' }\n"
 MAPPING_PLUGIN = "    id 'org.parchmentmc.librarian.forgegradle' version '1.+'\n"
 # GET VERSION HERE: https://parchmentmc.org/docs/getting-started
-MAPPING_CHANNEL = "    mappings channel: 'parchment', version: '2023.02.05-1.19.3'\n"
+MAPPING_CHANNEL = "    mappings channel: 'parchment', version: '2023.09.03-1.20.1'\n"
 
 ADD_MIXIN = True
 MIXIN_REPO = "        maven { url = 'https://repo.spongepowered.org/maven' }\n"
 MIXIN_STRATEGY = """    resolutionStrategy {
         eachPlugin {
             if (it.requested.id.namespace == 'org.spongepowered') {
-                it.useModule('org.spongepowered:mixingradle:0.7-SNAPSHOT')
+                it.useModule('org.spongepowered:mixingradle:0.7.+')
             }
         }
     }
 """
-MIXIN_PLUGIN = "    id 'org.spongepowered.mixin' version '0.7-SNAPSHOT'\n"
+MIXIN_PLUGIN = "    id 'org.spongepowered.mixin' version '0.7.+'\n"
 MIXIN_SRC = """mixin {
     add sourceSets.main, "modid.refmap.json"
 }
